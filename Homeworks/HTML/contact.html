@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ваш коментар</title>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Моите любими албуми</a>
+            <a href="about.html">За албумите и групите</a>
+            <a href="timeline.html">Времева рамка</a>
+            <a href="data.html">Още информация</a>
+        </nav>
+
+        <form action="send-message.php" method="post">
+            <fieldset>
+                <legend>Лична информация</legend>
+                <label> Имейл : <input type="email" placeholder="email@adress.com" required></label>
+
+                <div class="radio-form-group">
+                    <label> Не искам да получавам съобщение за обратна връзка :</label>
+                    <label> <input type="radio" id="response-to-email-button-yes" name="response-to-email-button" value="Y"> Да </label>
+                    <label> <input type="radio" id="response-to-email-button-no" name="response-to-email-button" value="N"> Не </label>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Моя коментар</legend>
+                <label> Коментар : <textarea placeholder="Според мен..." required></textarea></label>
+                <label> Оценка на страниците ( ?/10) : <input type="number" id="rating" name="rating" min="1" max="10" step="1" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Предложения за слушане</legend>
+                <label> Име на албума : <input type="text" id="album-name" name="album-name"></label>
+                <label> Изпълнител : <input type="text" id="artist" name="artist"></label>
+                <label> Дата на излилане на албума : <input type="date"></label>
+                <label> Жанр : 
+                    <select>
+                        <optgroup label="Познати">
+                            <option value="1">Rock</option>
+                            <option value="2">Hard rock</option>
+                            <option value="3">Arena rock</option>
+                            <option value="4">Metal</option>
+                            <option value="5">Hair metal</option>
+                            <option value="6">Nu metal</option>
+                            <option value="7">Punk</option>
+                            <option value="8">Pop punk</option>
+                        </optgroup>
+                        <option value="" selected>Друг</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <button type="submit">Прати коментар</button>
+        </form>
+
+        <footer>
+            <p>&copy; 2026 Моите любими албуми - домашно</p>
+        </footer>
+    </body>
+</html>
