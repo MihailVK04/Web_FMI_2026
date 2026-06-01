@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/style.css" rel="stylesheet">
+    <title>Puppy Form</title>
+</head>
+<body>
+    <figure>
+        <img src="./images/dog.png" alt="Happy golden retriever dog">
+    </figure>
+
+    <section>
+        <h1>Yay, puppies! Register your puppy today!</h1>
+
+        <form>
+            <label for="pet-name"> Name </label>
+            <input id="pet-name" type="text" placeholder="Pet's name">
+
+            <button type="button">Upload Photo</button>
+
+            <label for="breed"> Breed </label>
+            <select id="breed">
+                <option value="" disabled selected>Choose a breed</option>
+                <option value="1">Golden Retriever</option>
+                <option value="2">Dachshund</option>
+                <option value="3">English bulldog</option>
+                <option value="4">Cocker Spaniel</option>
+                <option value="5">Husky</option>
+            </select>
+
+            <label for="birthday"> Birthday </label>
+            <input id="birthday" type="date">
+
+            <label> Gender </label>
+            <div class="gender-group">
+                <label><input type="radio" name="gender" value="F" checked> Female </label>
+                <label><input type="radio" name="gender" value="M"> Male </label>
+            </div>
+
+            <label for="weight"> Weight (lbs) </label>
+            <input id="weight" type="number" placeholder="Enter weight" min="1">
+        </form>
+
+        <nav>
+            <button type="button"> Back </button>
+            <span class="nav-spacer"></span>
+            <button type="button"> Next </button>
+        </nav>
+    </section>
+</body>
+</html>
