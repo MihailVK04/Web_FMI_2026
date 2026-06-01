@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма за регистрация</title>
+    <script src="./javascript/script.js" defer></script>
+    <link rel="stylesheet" href="./style/form-style.css">
+</head>
+    <body>
+        <h1 class="page-header">Форма за регистрация</h1>
+
+        <div id="message-container" class="message-container" hidden>
+            <h2 id="message"></h2>
+        </div>
+
+        <form action="" id="registration-form" class="flex">
+            <label for="username">Потребителско име:</label>
+            <input type="text" required id="username">
+
+            <div class="first-and-last-name-container">
+                <label for="name">Име:</label>
+                <input type="text" required id="name">
+                <label for="family-name">Фамилия:</label>
+                <input type="text" required id="family-name">
+            </div>
+
+            <label for="email">Имейл:</label>
+            <input type="email" required id="email" placeholder="user@email.com">
+            <label for="password">Парола (Главни, малки букви и цифри):</label>
+            <input type="password" required id="password">
+            
+            <div class="optional-fields">
+                <label for="street">Улица:</label>
+                <input type="text" id="street">
+                <label for="city">Град:</label>
+                <input type="text" id="city">
+                <label for="postal-code">Пощенски код:</label>
+                <input type="text" id="postal-code" placeholder="11111-1111 or 1111">
+            </div>
+
+            <button type="button" id="register-btn">Регистрирай</button>
+        </form>
+
+        <div id="correct-registration-container" class="container" hidden>
+            <h2>Успешна регистрация!</h2>
+            <button type="button" id="reset-btn">Нова регистрация</button>
+        </div>
+    </body>
+</html>
